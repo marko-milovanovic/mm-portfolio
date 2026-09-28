@@ -1,0 +1,20 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two carriage returns
+Icon
+
+# Thumbnails
+._*
+
+# Files that might be created on a Mac file system
+.Spotlight-V100
+.Trashes
+
+# Directories potential created by macOS
+.DocumentRevisions-V100
+.fseventsd
+.VolumeIcon.icns
+.DS_Store

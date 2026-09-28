@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Marko Milovanović">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio — software engineering, mobile development and product work.">
+  <title>Marko Milovanović — iOS & Technical Product Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Go to home">
+      <span class="brand-mark">/</span>
+      <span>Marko Milovanović</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about" data-open-tab="about">About</a>
+      <a href="#about" data-open-tab="skills">Skills</a>
+      <a href="#apps">Apps</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <h4>Software Engineer · iOS · Product</h4>
+        <div class="hero-info">
+          <h1>I build <span>reliable</span>, <span>optimized</span> and <span>scalable</span> products.</h1>
+          <img src="images/profile.jpg" alt="profile">
+        </div>
+        <p class="hero-text">I build and modernize iOS products end-to-end, with 7+ years in software engineering and deep expertise in Swift, SwiftUI, UIKit, architecture, performance, and security. I’ve shipped 20+ applications across fintech, productivity, healthcare, and retail, including products used by tens of millions of users.</p>
+        <p class="hero-text">My work spans the full development lifecycle — from architecture and feature development to legacy modernization, testing, performance optimization, and secure production delivery. I’ve contributed across teams of up to 20 engineers, led iOS development, and built reusable architectures and components that help teams ship faster and maintain high-quality products.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="reveal">
+        <h4>01 / About</h4>
+        <h2>A little bit<br><span>about me.</span></h2>
+      </div>
+      <div class="about-tabs reveal">
+        <div class="segmented-control" role="tablist" aria-label="About me sections">
+          <button class="segment active" role="tab" aria-selected="true" aria-controls="tab-about" data-tab="about">About</button>
+          <button class="segment" role="tab" aria-selected="false" aria-controls="tab-skills" data-tab="skills">Skills</button>
+          <button class="segment" role="tab" aria-selected="false" aria-controls="tab-hobbies" data-tab="hobbies">Hobbies</button>
+        </div>
+        <div class="tab-panels">
+          <article class="tab-panel active" id="tab-about" role="tabpanel">
+            <p class="lead">I'm a Senior iOS Developer from Belgrade, Serbia. I build reliable, optimized and scalable products. Background in Computer Science, graduated in Computer Engineering.</p>
+            <p>I work at the intersection of engineering and product, turning ambiguous problems into well-defined solutions, shipped features, and measurable results.</p>
+          </article>
+          <article class="tab-panel" id="tab-skills" role="tabpanel" hidden>
+            <p class="lead"><strong>Development</strong> — Swift, SwiftUI, UIKit; clean architecture</p>
+            <p class="lead"><strong>Core Frameworks</strong> — Location, Bluetooth, MapKit, robust networking</p>
+            <p class="lead"><strong>Design &amp; Prototyping</strong> — Figma, Sketch, Zeplin</p>
+            <p class="lead"><strong>Product Analytics</strong> — event taxonomy, funnels, user behavior</p>
+            <p class="lead"><strong>Experimentation</strong> — A/B testing, guardrails, impact sizing</p>
+            <p class="lead"><strong>Leadership</strong> — Team Lead &amp; EM across the full product lifecycle</p>
+          </article>
+          
+          <article class="tab-panel" id="tab-hobbies" role="tabpanel" hidden>
+            <p class="lead"><strong>Calisthenics</strong> is something I really enjoy. I like the combination of strength, mobility, and discipline, and I'm always working on improving and learning new skills.</p>
+            <p class="lead"><strong>Hiking</strong> is my way of getting away from screens and spending time outdoors. I enjoy exploring new places, being in nature, and taking on longer and more challenging trails.</p>
+            <p class="lead"><strong>History</strong> is a subject I find fascinating. I enjoy learning about different periods, cultures, and events and understanding how they shaped the world we live in today.</p>
+            <p class="lead"><strong>Books</strong> are my favorite way to escape into another world. I mostly enjoy historical fiction, fantasy, and science fiction, especially stories with rich worlds, interesting characters, and deep lore.</p>
+            <p class="lead"><strong>Gaming</strong> is one of my favorite ways to relax. I enjoy story-driven games, RPGs, and strategy games, especially when they offer immersive worlds and challenging gameplay.</p>
+            <p class="lead"><strong>Cooking</strong> has become one of my favorite hobbies. I enjoy experimenting with different ingredients, discovering new recipes, and, most importantly, eating the results.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="apps" class="section apps-section">
+      <div class="apps-heading reveal">
+        <div>
+          <h4>02 / Selected work</h4>
+          <h2>Things I've<br><span>built.</span></h2>
+        </div>
+        <p class="apps-heading-note">Click any project to open its details.</p>
+      </div>
+
+      <div class="apps-grid"></div> <!-- filled from js -->
+
+      <button class="button button-outline portfolio-button" id="openPortfolioBtn">Complete portfolio ↗</button>
+    </section>
+
+    <section id="testimonials" class="section testimonials-section">
+      <div class="reveal">
+        <h4>03 / Testimonials</h4>
+        <h2>What people<br><span>say.</span></h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <blockquote class="testimonial reveal">
+          <span class="quote-mark">“</span>
+          <p>He is a developer who truly cares about how things work under the hood. He stays at the forefront of the iOS ecosystem, constantly exploring new updates and applying modern development practices. His approach to software engineering emphasizes concise code, robust modular design, and high reusability—ensuring that everything he works on stays neatly structured and maintainable.</p>
+          <footer>— Damir J. Djozic, <span>Cake.com</span></footer>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <span class="quote-mark">“</span>
+          <p>He is hard working, has a strong engineering skillset and is a joy to work with with his positive attitude, calm personality and a strong sense of what the team goals are.</p>
+          <footer>— Stevan Kovačević, <span>CIF/N26</span></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-inner reveal">
+        <h4>04 / Contact</h4>
+        <h2>Have a project<br>in mind?</h2>
+        <p>Let's talk about it.</p>
+        <div class="social-links">
+          <a href="https://github.com/marko-milovanovic" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/marko-milovanovi%C4%87-se/" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:marko.milovanovic.se@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Marko Milovanović</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <div class="modal" id="appModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close project details" data-close-modal>×</button>
+
+      <div id="modalMedia" class="modal-media">
+        <img id="modalFirstImage">
+        <img id="modalSecondImage">
+        <img id="modalThirdImage">
+      </div>
+
+      <div class="modal-content">
+        <h2 id="modalTitle">App Name</h2>
+        <div class="modal-rule"></div>
+        <p id="modalDescription">App description goes here.</p>
+        <ul class="feature-list" id="modalFeatures"></ul>
+
+        <div class="tag-list" id="modalTags"></div>
+
+        <div class="modal-actions">
+          <a class="button button-primary" id="modalStore" href="#" target="_blank" rel="noreferrer">App Store ↗</a>
+          <button class="button button-ghost" data-close-modal>Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="portfolioModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="portfolioModalTitle">
+    <div class="modal-backdrop" data-close-portfolio></div>
+    <div class="modal-panel portfolio-modal-panel">
+      <button class="modal-close" aria-label="Close portfolio list" data-close-portfolio>×</button>
+
+      <div class="modal-content full-width">
+        <h2 id="portfolioModalTitle">Complete Portfolio</h2>
+        <div class="modal-rule"></div>
+
+        <div class="portfolio-table-wrapper">
+          <div class="portfolio-grid" id="portfolioGrid">
+            <div class="portfolio-header">
+              <div>Project</div>
+              <div>Description</div>
+            </div>
+            <div class="portfolio-body" id="portfolioBody">
+              <!-- Populated via JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
